@@ -1,13 +1,22 @@
 p {
     font-family: "Mali", Times, serif;
+	font-size: 20px;
 }
+
+h1{
+    font-family: "Mali", Times, serif;
+	color: yellow;
+	font-size: 32px;
+	
+}
+
+
 img {
 	border: 5px black solid;
 }
 .grid {
 	display: grid ;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .grid-container {
   text-align: center;
@@ -20,4 +29,22 @@ body{
 .border {
 	border-style: solid;
     border-width: 5px;
+}
+.center {
+	text-align: center;
+}
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.span4 { 
+	grid-column: span 4;
+}
+
+.span2 { 
+	grid-column-start: 2;
+	grid-column-end: span 2;
 }
